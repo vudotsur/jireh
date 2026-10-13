@@ -1,0 +1,8 @@
+{
+  "name": "comunidade-jeova-jireh",
+  "version": "1.0.0",
+  "description": "Site Oficial da Comunidade Cristã Jeová Jireh - São Mateus do Sul",
+  "scripts": {
+    "start": "npx serve ."
+  }
+}

@@ -1,0 +1,1820 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comunidade Cristã Jeová Jireh | São Mateus do Sul - PR</title>
+  <meta name="description" content="Uma família abençoada vivendo o amor de Jesus em São Mateus do Sul - PR. Cultos às quintas 19h30 e domingos 18h30. Ministério Jireh Kids e células nos lares.">
+  <meta name="keywords" content="Igreja São Mateus do Sul, Comunidade Cristã Jeová Jireh, Jireh Kids, Culto da Família, Células São Mateus do Sul, Fé, Evangelho, BR-476">
+  <meta name="theme-color" content="#111113">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Comunidade Cristã Jeová Jireh - São Mateus do Sul">
+  <meta property="og:description" content="Uma família abençoada vivendo o amor de Jesus. Venha adorar ao Senhor conosco na BR-476.">
+  <meta property="og:image" content="assets/img_17.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/mountain_logo.svg">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Newsreader & Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Playfair+Display:ital,wght@0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            warm: {
+              base: '#111113',
+              surface: '#161619',
+              card: '#1c1a18',
+              cardHover: '#23201d',
+              border: '#2b2824',
+              borderLight: '#38342f',
+              linen: '#f4efe6',
+              linenMuted: '#ede6db',
+              ocre: '#d97706',
+              ocreDark: '#b45309',
+              caramel: '#c26a10',
+              text: '#f5f5f4',
+              muted: '#a8a29e',
+              stone: '#78716c'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+            serif: ['"Newsreader"', '"Playfair Display"', 'Georgia', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    /* Scrollbar Sóbria & Orgânica */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #111113;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #2b2824;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #38342f;
+    }
+
+    /* Glassmorphism Acolhedor e Fosco */
+    .warm-glass {
+      background: rgba(22, 22, 25, 0.85);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(244, 239, 230, 0.07);
+    }
+    .warm-glass-nav {
+      background: rgba(17, 17, 19, 0.90);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(244, 239, 230, 0.06);
+    }
+
+    /* Detalhe de textura fina editorial */
+    .editorial-quote {
+      position: relative;
+    }
+    .editorial-quote::before {
+      content: "“";
+      position: absolute;
+      top: -1.2rem;
+      left: -0.8rem;
+      font-size: 4rem;
+      font-family: "Newsreader", serif;
+      color: rgba(217, 119, 6, 0.25);
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    /* Linhas de grade e frames finos */
+    .fine-frame {
+      box-shadow: 0 0 0 1px rgba(244, 239, 230, 0.08);
+    }
+  </style>
+</head>
+
+<body class="bg-[#111113] text-[#f5f5f4] font-sans antialiased selection:bg-amber-700/60 selection:text-white">
+
+  <!-- Toast Notification Container Flutuante -->
+  <div id="toast-container" class="fixed top-5 right-5 z-[100] flex flex-col gap-3 pointer-events-none"></div>
+
+  <!-- ========================================================================= -->
+  <!-- 1. HEADER / NAVBAR (SÓBRIA, FOSCA E ACOLHEDORA)                           -->
+  <!-- ========================================================================= -->
+  <header class="fixed top-0 left-0 right-0 z-50 warm-glass-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo Oficial & Nome (Apenas a Montanha em Vetor, Sem Círculo e Sem Letras na Imagem) -->
+        <a href="#inicio" class="flex items-center gap-3 group">
+          <div class="w-9 h-9 flex items-center justify-center transition-transform duration-300 group-hover:scale-105 text-[#f4efe6] group-hover:text-amber-300">
+            <svg class="w-8 h-8 fill-current" viewBox="0 0 540 540">
+              <path fill-rule="evenodd" d="M 452 411 L 430 361 L 429 348 L 471 310 L 482 302 L 488 302 L 532 341 L 540 342 L 540 529 L 506 529 L 501 525 L 452 411 Z M 90 529 L 28 530 L 22 528 L 21 521 L 39 497 L 182 254 L 197 236 L 211 241 L 322 319 L 361 342 L 382 360 L 401 405 L 409 415 L 411 429 L 419 440 L 421 452 L 452 521 L 446 530 L 90 529 Z M 374 47 L 388 26 L 391 15 L 402 12 L 407 15 L 411 28 L 455 99 L 520 104 L 528 109 L 533 121 L 540 123 L 540 282 L 530 280 L 498 250 L 482 243 L 405 308 L 395 310 L 271 227 L 272 214 L 278 210 L 292 181 L 298 176 L 374 47 Z" />
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-base sm:text-lg font-bold tracking-tight text-[#f4efe6] group-hover:text-amber-200 transition-colors">Jeová Jireh</span>
+            <span class="text-[11px] text-[#a8a29e] font-normal tracking-wide">São Mateus do Sul • PR</span>
+          </div>
+        </a>
+
+        <!-- Menu Desktop -->
+        <nav class="hidden lg:flex items-center gap-6 text-[13px] font-medium text-[#d6d3d1]">
+          <a href="#inicio" class="hover:text-[#f4efe6] transition-colors">Início</a>
+          <a href="#sobre" class="hover:text-[#f4efe6] transition-colors">Quem Somos</a>
+          <a href="#visita" class="hover:text-[#f4efe6] transition-colors">Visite-nos</a>
+          <a href="#kids" class="hover:text-[#f4efe6] transition-colors">Jireh Kids</a>
+          <a href="#cultos" class="hover:text-[#f4efe6] transition-colors">Cultos</a>
+          <a href="#celulas" class="hover:text-[#f4efe6] transition-colors">Células</a>
+          <a href="#sermoes" class="hover:text-[#f4efe6] transition-colors">Sermões</a>
+          <a href="#oracao" class="hover:text-[#f4efe6] transition-colors">Oração</a>
+          <a href="#localizacao" class="hover:text-[#f4efe6] transition-colors">Como Chegar</a>
+        </nav>
+
+        <!-- Ações do Header -->
+        <div class="hidden sm:flex items-center gap-3">
+          <!-- Botão CTA Planeje Sua Visita -->
+          <a href="#visita" class="flex items-center gap-2 px-4 py-2.5 rounded-full text-xs sm:text-sm font-semibold bg-[#f4efe6] hover:bg-[#ede6db] text-[#111113] transition-all shadow-sm">
+            <i data-lucide="coffee" class="w-4 h-4 text-amber-700"></i>
+            <span>Planejar Visita</span>
+          </a>
+        </div>
+
+        <!-- Botão Menu Mobile -->
+        <div class="lg:hidden flex items-center gap-2">
+          <button onclick="toggleMobileMenu()" aria-label="Abrir Menu" class="p-2.5 rounded-lg text-[#f4efe6] hover:bg-[#1c1a18] transition-colors">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Gaveta Menu Mobile -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-[#161619] border-b border-[#2b2824] px-4 py-5 space-y-3">
+      <div class="grid grid-cols-2 gap-2 text-xs font-medium text-[#d6d3d1]">
+        <a href="#inicio" onclick="toggleMobileMenu()" class="p-2.5 rounded-lg bg-[#1c1a18] hover:text-white transition-colors">Início</a>
+        <a href="#sobre" onclick="toggleMobileMenu()" class="p-2.5 rounded-lg bg-[#1c1a18] hover:text-white transition-colors">Quem Somos</a>
+        <a href="#visita" onclick="toggleMobileMenu()" class="p-2.5 rounded-lg bg-[#1c1a18] hover:text-white transition-colors">Visite-nos</a>
+        <a href="#kids" onclick="toggleMobileMenu()" class="p-2.5 rounded-lg bg-[#1c1a18] hover:text-white transition-colors">Jireh Kids</a>
+        <a href="#cultos" onclick="toggleMobileMenu()" class="p-2.5 rounded-lg bg-[#1c1a18] hover:text-white transition-colors">Cultos Semanais</a>
+        <a href="#celulas" onclick="toggleMobileMenu()" class="p-2.5 rounded-lg bg-[#1c1a18] hover:text-white transition-colors">Células nos Bairros</a>
+        <a href="#sermoes" onclick="toggleMobileMenu()" class="p-2.5 rounded-lg bg-[#1c1a18] hover:text-white transition-colors">Sermões & Vídeos</a>
+        <a href="#oracao" onclick="toggleMobileMenu()" class="p-2.5 rounded-lg bg-[#1c1a18] hover:text-white transition-colors">Pedido de Oração</a>
+        <a href="#localizacao" onclick="toggleMobileMenu()" class="p-2.5 rounded-lg bg-[#1c1a18] hover:text-white transition-colors">Como Chegar</a>
+      </div>
+      <div class="pt-2">
+        <a href="#visita" onclick="toggleMobileMenu()" class="w-full flex items-center justify-center gap-2 py-3 rounded-xl font-semibold bg-[#f4efe6] text-[#111113] text-sm">
+          <i data-lucide="coffee" class="w-4 h-4 text-amber-700"></i>
+          <span>Planejar Minha Visita</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================= -->
+  <!-- 2. HERO CINEMATOGRÁFICO & EDITORIAL (FOTO REAL, ZERO NEON)               -->
+  <!-- ========================================================================= -->
+  <section id="inicio" class="relative min-h-[92vh] flex items-center justify-center pt-28 pb-20 overflow-hidden">
+    
+    <!-- Fotografia Real do Culto Presencial em Widescreen com Tratamento Editorial -->
+    <div class="absolute inset-0 z-0">
+      <img src="assets/img_17.jpg" alt="Culto presencial na Comunidade Cristã Jeová Jireh" class="w-full h-full object-cover object-center scale-105 filter brightness-[0.42] contrast-[1.05]">
+      <!-- Gradientes quentes suaves para transição orgânica (sem cortes bruscos) -->
+      <div class="absolute inset-0 bg-gradient-to-t from-[#111113] via-[#111113]/70 to-[#111113]/40"></div>
+      <div class="absolute inset-0 bg-radial from-transparent via-[#111113]/40 to-[#111113]/80"></div>
+    </div>
+
+    <!-- Conteúdo Central -->
+    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
+      
+      <!-- Selo Humano & Local -->
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1c1a18]/80 border border-[#38342f] text-[#ede6db] text-xs sm:text-sm font-medium mb-8 backdrop-blur-md">
+        <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+        <span>São Mateus do Sul • PR</span>
+      </div>
+
+      <!-- Título Principal Editorial de Alto Impacto -->
+      <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-normal text-[#f4efe6] tracking-tight leading-[1.14] max-w-4xl mb-6">
+        Uma família abençoada <br>
+        <span class="italic font-normal text-amber-200/90">vivendo o amor de Jesus.</span>
+      </h1>
+
+      <!-- Subtítulo Acolhedor Local -->
+      <p class="text-base sm:text-xl text-[#d6d3d1] max-w-2xl font-normal leading-relaxed mb-10">
+        Reunimo-nos toda quinta às 19h30 e domingo às 18h30. Venha adorar ao Senhor conosco na BR-476, em São Mateus do Sul.
+      </p>
+
+      <!-- Horários dos Cultos Semanais (Cards Táteis e Elegantes) -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 mb-10 w-full max-w-xl text-left">
+        
+        <div class="p-4 rounded-2xl bg-[#1c1a18]/85 border border-[#2b2824] backdrop-blur-md flex items-center gap-3.5">
+          <div class="w-10 h-10 rounded-xl bg-[#2b2824] flex items-center justify-center text-amber-400 flex-shrink-0">
+            <i data-lucide="book-open" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <span class="block text-[11px] uppercase tracking-wider text-amber-300/90 font-semibold">Toda Quinta-feira • 19h30</span>
+            <span class="block text-sm font-medium text-[#f4efe6]">Oração & Estudo da Palavra</span>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-[#1c1a18]/85 border border-[#2b2824] backdrop-blur-md flex items-center gap-3.5">
+          <div class="w-10 h-10 rounded-xl bg-[#2b2824] flex items-center justify-center text-amber-400 flex-shrink-0">
+            <i data-lucide="users" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <span class="block text-[11px] uppercase tracking-wider text-amber-300/90 font-semibold">Todo Domingo • 18h30</span>
+            <span class="block text-sm font-medium text-[#f4efe6]">Culto da Família & Jireh Kids</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Ações Principais -->
+      <div class="flex flex-col sm:flex-row items-center gap-3.5 w-full sm:w-auto">
+        <a href="#visita" class="w-full sm:w-auto flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full text-sm font-semibold bg-[#f4efe6] hover:bg-[#ede6db] text-[#111113] transition-all transform hover:-translate-y-0.5 shadow-md">
+          <i data-lucide="coffee" class="w-4 h-4 text-amber-700"></i>
+          <span>Planejar Minha Visita</span>
+        </a>
+        <a href="#localizacao" class="w-full sm:w-auto flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full text-sm font-medium text-[#f4efe6] bg-[#1c1a18]/80 hover:bg-[#23201d] border border-[#38342f] backdrop-blur-md transition-all">
+          <i data-lucide="map-pin" class="w-4 h-4 text-amber-400"></i>
+          <span>Como Chegar (BR-476)</span>
+        </a>
+      </div>
+
+      <!-- Notas Humanas de Recepção -->
+      <div class="mt-14 pt-8 border-t border-[#2b2824]/60 grid grid-cols-2 sm:grid-cols-4 gap-4 w-full text-[#a8a29e] text-xs">
+        <div class="flex items-center justify-center gap-2">
+          <i data-lucide="coffee" class="w-3.5 h-3.5 text-amber-400"></i>
+          <span>Café passado quentinho</span>
+        </div>
+        <div class="flex items-center justify-center gap-2">
+          <i data-lucide="shield-check" class="w-3.5 h-3.5 text-amber-400"></i>
+          <span>Espaço Jireh Kids seguro</span>
+        </div>
+        <div class="flex items-center justify-center gap-2">
+          <i data-lucide="car" class="w-3.5 h-3.5 text-amber-400"></i>
+          <span>Estacionamento no local</span>
+        </div>
+        <div class="flex items-center justify-center gap-2">
+          <i data-lucide="smile" class="w-3.5 h-3.5 text-amber-400"></i>
+          <span>Pode vir à vontade</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 3. MÓDULO: QUEM SOMOS & COMUNHÃO REAL (EDITORIAL, HISTÓRIA HUMANA)         -->
+  <!-- ========================================================================= -->
+  <section id="sobre" class="py-24 relative bg-[#161619] border-t border-b border-[#2b2824]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        
+        <!-- Coluna de Texto Editorial -->
+        <div class="lg:col-span-6 space-y-6">
+          
+          <div class="inline-flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-amber-400">
+            <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+            <span>Nossa Família</span>
+          </div>
+
+          <h2 class="font-serif text-3xl sm:text-5xl font-normal text-[#f4efe6] tracking-tight leading-tight">
+            Mais do que um templo, <br>
+            <span class="italic text-amber-200/90">uma mesa com lugar pra você.</span>
+          </h2>
+
+          <p class="text-[#d6d3d1] text-base leading-relaxed">
+            A <strong>Comunidade Cristã Jeová Jireh</strong> é formada por pessoas simples que descobriram a beleza de caminhar com Jesus. A gente se reúne na BR-476 em São Mateus do Sul para orar uns pelos outros, ouvir a Palavra e viver o evangelho de maneira sincera e acessível.
+          </p>
+
+          <p class="text-[#a8a29e] text-sm leading-relaxed">
+            Aqui ninguém precisa fingir que tem a vida resolvida ou usar máscaras. Somos famílias comuns sendo cuidadas pela graça de Deus, descobrindo dia após dia que <em>Jeová Jireh</em> significa exatamente isto: <strong>O Senhor Proverá</strong> paz, perdão e direção para a sua vida.
+          </p>
+
+          <!-- 3 Traços da Nossa Comunidade -->
+          <div class="pt-4 space-y-3.5 text-sm">
+            <div class="p-4 rounded-2xl bg-[#1c1a18] border border-[#2b2824] flex items-start gap-3.5">
+              <div class="w-2 h-2 rounded-full bg-amber-400 mt-2 flex-shrink-0"></div>
+              <div>
+                <strong class="text-[#f4efe6] block font-semibold">Jesus no Centro de Tudo</strong>
+                <span class="text-xs text-[#a8a29e]">Sem complicações doutrinárias pesadas. Nossa mensagem é Cristo, Seu amor sacrificial e Sua graça transformadora.</span>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-[#1c1a18] border border-[#2b2824] flex items-start gap-3.5">
+              <div class="w-2 h-2 rounded-full bg-amber-400 mt-2 flex-shrink-0"></div>
+              <div>
+                <strong class="text-[#f4efe6] block font-semibold">Cuidado com Cada Geração</strong>
+                <span class="text-xs text-[#a8a29e]">As crianças têm o Jireh Kids com carinho pedagógico, os jovens compartilham a vida e os mais velhos encontram honra e acolhimento.</span>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-[#1c1a18] border border-[#2b2824] flex items-start gap-3.5">
+              <div class="w-2 h-2 rounded-full bg-amber-400 mt-2 flex-shrink-0"></div>
+              <div>
+                <strong class="text-[#f4efe6] block font-semibold">Aconchego Paranaense</strong>
+                <span class="text-xs text-[#a8a29e]">Um café passado antes de começar, aperto de mão caloroso e a certeza de que você não vai passar despercebido.</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Coluna de Imagens Reais (Colagem Editorial) -->
+        <div class="lg:col-span-6">
+          <div class="grid grid-cols-12 gap-4">
+            
+            <!-- Imagem 1: Jovens rindo e comunhão real (assets/img_37.png) -->
+            <div class="col-span-12 rounded-3xl overflow-hidden border border-[#2b2824] bg-[#1c1a18] relative group">
+              <img src="assets/img_37.png" alt="Jovens rindo e fazendo amizades na Jeová Jireh" class="w-full h-72 sm:h-80 object-cover object-center group-hover:scale-[1.02] transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#111113]/90 via-transparent to-transparent flex items-end p-6">
+                <div>
+                  <span class="inline-block px-3 py-1 rounded-full text-[11px] font-semibold bg-[#f4efe6] text-[#111113] mb-1.5">
+                    Fazendo Novos Amigos
+                  </span>
+                  <p class="text-sm font-medium text-[#f4efe6]">Amizade e apoio sincero que continuam durante a semana inteira</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Imagem 2: assets/img_38.jpg -->
+            <div class="col-span-6 rounded-2xl overflow-hidden border border-[#2b2824] bg-[#1c1a18] relative group">
+              <img src="assets/img_38.jpg" alt="Culto de Domingo na Jeová Jireh" class="w-full h-44 object-cover object-center group-hover:scale-[1.02] transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#111113]/80 to-transparent flex items-end p-3.5">
+                <span class="text-xs font-medium text-[#ede6db]">Culto da Família</span>
+              </div>
+            </div>
+
+            <!-- Imagem 3: assets/img_36.jpg -->
+            <div class="col-span-6 rounded-2xl overflow-hidden border border-[#2b2824] bg-[#1c1a18] relative group">
+              <img src="assets/img_36.jpg" alt="Estudo Bíblico das Quintas" class="w-full h-44 object-cover object-center group-hover:scale-[1.02] transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#111113]/80 to-transparent flex items-end p-3.5">
+                <span class="text-xs font-medium text-[#ede6db]">Estudo Bíblico das Quintas</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 4. MÓDULO: PLANEJE SUA VISITA (SEM ANSIEDADE, COM AFETO)                  -->
+  <!-- ========================================================================= -->
+  <section id="visita" class="py-24 relative bg-[#111113]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Cabeçalho -->
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-amber-400 mb-3">
+          <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+          <span>Primeira Vez Aqui?</span>
+        </div>
+        <h2 class="font-serif text-3xl sm:text-4xl font-normal text-[#f4efe6] tracking-tight mb-4">
+          Tudo o que você precisa saber antes de chegar
+        </h2>
+        <p class="text-[#a8a29e] text-sm sm:text-base leading-relaxed">
+          Entrar numa igreja pela primeira vez pode dar aquele receio. Na Jeová Jireh, você é recebido com a simplicidade e o respeito que você merece.
+        </p>
+      </div>
+
+      <!-- 3 Perguntas e Respostas Humanas (São Mateus do Sul) -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+        
+        <!-- Dúvida 1: O que vestir -->
+        <div class="p-8 rounded-3xl bg-[#161619] border border-[#2b2824] flex flex-col justify-between">
+          <div>
+            <div class="text-xs uppercase tracking-wider text-amber-400 font-semibold mb-3">
+              Pergunta Frequente 01
+            </div>
+            <h3 class="font-serif text-xl font-normal text-[#f4efe6] mb-3">
+              O que devo vestir?
+            </h3>
+            <p class="text-[#a8a29e] text-sm leading-relaxed mb-4">
+              Pode vir como você se sentir à vontade &mdash; calça, bermuda ou tênis. Nossa comunidade é simples e familiar. O que importa de verdade é o seu coração estar em paz.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-[#2b2824] text-xs text-[#d6d3d1] font-medium flex items-center gap-2">
+            <i data-lucide="check" class="w-4 h-4 text-amber-400"></i>
+            <span>Ambiente informal e leve</span>
+          </div>
+        </div>
+
+        <!-- Dúvida 2: Onde fica e estacionamento -->
+        <div class="p-8 rounded-3xl bg-[#161619] border border-[#2b2824] flex flex-col justify-between">
+          <div>
+            <div class="text-xs uppercase tracking-wider text-amber-400 font-semibold mb-3">
+              Pergunta Frequente 02
+            </div>
+            <h3 class="font-serif text-xl font-normal text-[#f4efe6] mb-3">
+              Onde fica? Tem estacionamento?
+            </h3>
+            <p class="text-[#a8a29e] text-sm leading-relaxed mb-4">
+              Fica na BR-476, do ladinho do Restaurante Veneza. É super fácil de achar e tem bastante vaga para estacionar o carro ou a moto com calma e segurança.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-[#2b2824] text-xs text-[#d6d3d1] font-medium flex items-center gap-2">
+            <i data-lucide="check" class="w-4 h-4 text-amber-400"></i>
+            <span>Margem da BR-476 ao lado do Veneza</span>
+          </div>
+        </div>
+
+        <!-- Dúvida 3: E as crianças? -->
+        <div class="p-8 rounded-3xl bg-[#161619] border border-[#2b2824] flex flex-col justify-between">
+          <div>
+            <div class="text-xs uppercase tracking-wider text-amber-400 font-semibold mb-3">
+              Pergunta Frequente 03
+            </div>
+            <h3 class="font-serif text-xl font-normal text-[#f4efe6] mb-3">
+              Posso levar meus filhos?
+            </h3>
+            <p class="text-[#a8a29e] text-sm leading-relaxed mb-4">
+              Vem com a família toda! As crianças têm o espaço do Jireh Kids preparado pra elas, com professoras atenciosas, histórias da Bíblia, lanchinho e muita diversão.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-[#2b2824] text-xs text-[#d6d3d1] font-medium flex items-center gap-2">
+            <i data-lucide="check" class="w-4 h-4 text-amber-400"></i>
+            <span>Jireh Kids durante o culto de domingo</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Formulário de Recepção Humanizada (Aviso de Visita) -->
+      <div class="max-w-3xl mx-auto rounded-3xl p-8 sm:p-12 bg-[#161619] border border-[#2b2824]">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-8 pb-6 border-b border-[#2b2824]">
+          <div>
+            <span class="text-xs font-semibold text-amber-400 uppercase tracking-wider">Acolhimento com Café</span>
+            <h3 class="font-serif text-2xl font-normal text-[#f4efe6] mt-1">Queremos te receber com um café quentinho</h3>
+            <p class="text-xs text-[#a8a29e] mt-1">Se puder, nos dê um aviso para separarmos um lugar e te recebermos pelo nome!</p>
+          </div>
+          <div class="w-11 h-11 rounded-2xl bg-[#1c1a18] border border-[#2b2824] text-amber-400 flex items-center justify-center flex-shrink-0">
+            <i data-lucide="coffee" class="w-5 h-5"></i>
+          </div>
+        </div>
+
+        <form id="form-visita" onsubmit="handleVisitaSubmit(event)" class="space-y-5">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div>
+              <label for="visita-nome" class="block text-xs font-medium text-[#d6d3d1] uppercase tracking-wider mb-2">Seu Nome *</label>
+              <input type="text" id="visita-nome" required placeholder="Como podemos te chamar?" class="w-full px-4 py-3 rounded-xl bg-[#111113] border border-[#2b2824] text-[#f4efe6] placeholder-[#78716c] focus:outline-none focus:border-amber-500 text-sm">
+            </div>
+            <div>
+              <label for="visita-whatsapp" class="block text-xs font-medium text-[#d6d3d1] uppercase tracking-wider mb-2">Seu WhatsApp *</label>
+              <input type="tel" id="visita-whatsapp" required placeholder="(42) 99999-9999" class="w-full px-4 py-3 rounded-xl bg-[#111113] border border-[#2b2824] text-[#f4efe6] placeholder-[#78716c] focus:outline-none focus:border-amber-500 text-sm">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div>
+              <label for="visita-data" class="block text-xs font-medium text-[#d6d3d1] uppercase tracking-wider mb-2">Qual culto pretende vir?</label>
+              <select id="visita-data" class="w-full px-4 py-3 rounded-xl bg-[#111113] border border-[#2b2824] text-[#f4efe6] focus:outline-none focus:border-amber-500 text-sm">
+                <option value="Domingo às 18h30 (Culto da Família)">Domingo às 18h30 (Culto da Família)</option>
+                <option value="Quinta-feira às 19h30 (Oração & Palavra)">Quinta-feira às 19h30 (Oração & Palavra)</option>
+                <option value="Ainda vou escolher o dia">Ainda vou escolher o melhor dia</option>
+              </select>
+            </div>
+            <div>
+              <label for="visita-filhos" class="block text-xs font-medium text-[#d6d3d1] uppercase tracking-wider mb-2">Quem vem com você?</label>
+              <input type="text" id="visita-filhos" placeholder="Ex: Vou com minha esposa e 2 filhos" class="w-full px-4 py-3 rounded-xl bg-[#111113] border border-[#2b2824] text-[#f4efe6] placeholder-[#78716c] focus:outline-none focus:border-amber-500 text-sm">
+            </div>
+          </div>
+
+          <button type="submit" class="w-full flex items-center justify-center gap-2.5 py-3.5 rounded-xl font-semibold bg-[#f4efe6] hover:bg-[#ede6db] text-[#111113] transition-all text-sm mt-2">
+            <i data-lucide="send" class="w-4 h-4 text-amber-700"></i>
+            <span>Avisar Nossa Chegada no WhatsApp</span>
+          </button>
+          <p class="text-center text-[11px] text-[#78716c]">Nenhuma propaganda incômoda. O aviso vai direto para o pastor responsável pela recepção.</p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 5. MÓDULO: JIREH KIDS (COLAGEM EDITORIAL COM FOTOS REAIS DAS CRIANÇAS)    -->
+  <!-- ========================================================================= -->
+  <section id="kids" class="py-24 relative bg-[#161619] border-t border-b border-[#2b2824]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Cabeçalho com Citação Bíblica -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-amber-400 mb-3">
+          <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+          <span>Ministério Infantil Jireh Kids</span>
+        </div>
+        
+        <h2 class="font-serif text-3xl sm:text-5xl font-normal text-[#f4efe6] tracking-tight mb-4">
+          As crianças têm lugar de honra na Casa do Senhor
+        </h2>
+        
+        <p class="font-serif italic text-base sm:text-lg text-amber-200/90 max-w-xl mx-auto mb-4">
+          &ldquo;Deixem vir a mim as crianças e não as impeçam; pois o Reino dos céus pertence aos que são semelhantes a elas.&rdquo; &mdash; Mateus 19:14
+        </p>
+
+        <p class="text-[#a8a29e] text-sm sm:text-base leading-relaxed">
+          Enquanto os adultos ouvem o sermão, os pequenos aprendem os ensinamentos de Jesus com alegria, atividades manuais, segurança e carinho pedagógico.
+        </p>
+      </div>
+
+      <!-- Colagem Editorial das Fotos Reais (img_42, img_44, img_40, img_43) -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        
+        <!-- Foto 1: img_42.jpg -->
+        <div class="rounded-3xl overflow-hidden bg-[#1c1a18] border border-[#2b2824] group hover:border-[#38342f] transition-all">
+          <div class="h-60 overflow-hidden relative">
+            <img src="assets/img_42.jpg" alt="Crianças aprendendo a Bíblia no Jireh Kids" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#111113]/80 via-transparent to-transparent"></div>
+            <span class="absolute bottom-3 left-3 text-[11px] font-semibold text-[#f4efe6] bg-[#111113]/80 px-2.5 py-1 rounded-md backdrop-blur-sm">
+              Histórias da Bíblia
+            </span>
+          </div>
+          <div class="p-5">
+            <h4 class="font-serif text-base font-normal text-[#f4efe6] mb-1">Ensino com Significado</h4>
+            <p class="text-xs text-[#a8a29e] leading-relaxed">Lições bíblicas explicadas na linguagem que os pequenos entendem e guardam no coração.</p>
+          </div>
+        </div>
+
+        <!-- Foto 2: img_44.jpg -->
+        <div class="rounded-3xl overflow-hidden bg-[#1c1a18] border border-[#2b2824] group hover:border-[#38342f] transition-all">
+          <div class="h-60 overflow-hidden relative">
+            <img src="assets/img_44.jpg" alt="Momentos criativos no Jireh Kids" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#111113]/80 via-transparent to-transparent"></div>
+            <span class="absolute bottom-3 left-3 text-[11px] font-semibold text-[#f4efe6] bg-[#111113]/80 px-2.5 py-1 rounded-md backdrop-blur-sm">
+              Arte & Dinâmicas
+            </span>
+          </div>
+          <div class="p-5">
+            <h4 class="font-serif text-base font-normal text-[#f4efe6] mb-1">Criatividade na Prática</h4>
+            <p class="text-xs text-[#a8a29e] leading-relaxed">Desenhos, colagens e dinâmicas lúdicas para expressar a gratidão e a fé com alegria.</p>
+          </div>
+        </div>
+
+        <!-- Foto 3: img_40.jpg -->
+        <div class="rounded-3xl overflow-hidden bg-[#1c1a18] border border-[#2b2824] group hover:border-[#38342f] transition-all">
+          <div class="h-60 overflow-hidden relative">
+            <img src="assets/img_40.jpg" alt="Oração e afeto no Jireh Kids" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#111113]/80 via-transparent to-transparent"></div>
+            <span class="absolute bottom-3 left-3 text-[11px] font-semibold text-[#f4efe6] bg-[#111113]/80 px-2.5 py-1 rounded-md backdrop-blur-sm">
+              Oração & Cuidado
+            </span>
+          </div>
+          <div class="p-5">
+            <h4 class="font-serif text-base font-normal text-[#f4efe6] mb-1">Coração em Oração</h4>
+            <p class="text-xs text-[#a8a29e] leading-relaxed">Aprendendo a conversar com Deus e orar pela família, amigos e pela nossa cidade.</p>
+          </div>
+        </div>
+
+        <!-- Foto 4: img_43.jpg -->
+        <div class="rounded-3xl overflow-hidden bg-[#1c1a18] border border-[#2b2824] group hover:border-[#38342f] transition-all">
+          <div class="h-60 overflow-hidden relative">
+            <img src="assets/img_43.jpg" alt="Comunhão e amizades das crianças" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#111113]/80 via-transparent to-transparent"></div>
+            <span class="absolute bottom-3 left-3 text-[11px] font-semibold text-[#f4efe6] bg-[#111113]/80 px-2.5 py-1 rounded-md backdrop-blur-sm">
+              Novas Amizades
+            </span>
+          </div>
+          <div class="p-5">
+            <h4 class="font-serif text-base font-normal text-[#f4efe6] mb-1">Amizades Saudáveis</h4>
+            <p class="text-xs text-[#a8a29e] leading-relaxed">Um lugar seguro e sadio onde seus filhos crescem construindo laços fraternos genuínos.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Compromissos de Confiança para os Pais -->
+      <div class="p-8 sm:p-10 rounded-3xl bg-[#1c1a18] border border-[#2b2824] grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+        <div class="space-y-2">
+          <div class="text-xs uppercase tracking-wider text-amber-400 font-semibold">Segurança & Controle</div>
+          <h4 class="font-serif text-lg font-normal text-[#f4efe6]">Check-in e Entrega Cuidadosa</h4>
+          <p class="text-xs text-[#a8a29e] leading-relaxed">Apenas os pais ou responsáveis cadastrados podem retirar a criança após o encerramento do culto.</p>
+        </div>
+
+        <div class="space-y-2">
+          <div class="text-xs uppercase tracking-wider text-amber-400 font-semibold">Tias Voluntárias</div>
+          <h4 class="font-serif text-lg font-normal text-[#f4efe6]">Equipe Preparada com Afeto</h4>
+          <p class="text-xs text-[#a8a29e] leading-relaxed">Professoras da própria igreja dedicadas em servir, com paciência e amor por cada faixa etária.</p>
+        </div>
+
+        <div class="space-y-2">
+          <div class="text-xs uppercase tracking-wider text-amber-400 font-semibold">Ambiente Aconchegante</div>
+          <h4 class="font-serif text-lg font-normal text-[#f4efe6]">Lanchinho e Higiene</h4>
+          <p class="text-xs text-[#a8a29e] leading-relaxed">Espaço arejado, limpo e com momento de lanche para os pequenos descansarem entre as brincadeiras.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 6. MÓDULO: CULTOS SEMANAIS & LOCALIZAÇÃO NA BR-476                         -->
+  <!-- ========================================================================= -->
+  <section id="cultos" class="py-24 relative bg-[#111113]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Cabeçalho -->
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-amber-400 mb-3">
+          <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+          <span>Nossos Encontros</span>
+        </div>
+        <h2 class="font-serif text-3xl sm:text-4xl font-normal text-[#f4efe6] tracking-tight mb-4">
+          Horários dos Cultos Presenciais
+        </h2>
+        <p class="text-[#a8a29e] text-sm sm:text-base leading-relaxed">
+          Reserve esses dois momentos na sua semana para desacelerar, renovar as forças e estar em comunhão.
+        </p>
+      </div>
+
+      <!-- 2 Cards dos Cultos Semanais (Quinta & Domingo) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20 max-w-4xl mx-auto">
+        
+        <!-- Quinta-feira -->
+        <div class="p-8 sm:p-10 rounded-3xl bg-[#161619] border border-[#2b2824] flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-6 pb-4 border-b border-[#2b2824]">
+              <span class="text-xs font-semibold uppercase tracking-wider text-amber-400">
+                Toda Quinta-feira
+              </span>
+              <span class="font-serif text-2xl font-normal text-[#f4efe6]">
+                19h30
+              </span>
+            </div>
+
+            <h3 class="font-serif text-2xl font-normal text-[#f4efe6] mb-3">
+              Oração & Estudo da Palavra
+            </h3>
+            <p class="text-[#a8a29e] text-sm leading-relaxed mb-6">
+              Uma reunião mais íntima, focada em orar pelas famílias de São Mateus do Sul, estudar a Bíblia com profundidade e buscar direção espiritual para o dia a dia.
+            </p>
+          </div>
+
+          <div class="pt-4 border-t border-[#2b2824] flex items-center justify-between text-xs text-[#d6d3d1]">
+            <span>Estudo verso a verso</span>
+            <span class="text-amber-400 font-medium">Café pré-culto 19h15</span>
+          </div>
+        </div>
+
+        <!-- Domingo -->
+        <div class="p-8 sm:p-10 rounded-3xl bg-[#1c1a18] border border-[#38342f] flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-6 pb-4 border-b border-[#2b2824]">
+              <span class="text-xs font-semibold uppercase tracking-wider text-amber-300">
+                Todo Domingo • Principal
+              </span>
+              <span class="font-serif text-2xl font-normal text-[#f4efe6]">
+                18h30
+              </span>
+            </div>
+
+            <h3 class="font-serif text-2xl font-normal text-[#f4efe6] mb-3">
+              Culto da Família & Celebração
+            </h3>
+            <p class="text-[#a8a29e] text-sm leading-relaxed mb-6">
+              Nosso encontro de celebração com toda a comunidade: louvor, mensagem bíblica encorajadora e o funcionamento completo do Ministério Infantil Jireh Kids.
+            </p>
+          </div>
+
+          <div class="pt-4 border-t border-[#2b2824] flex items-center justify-between text-xs text-[#d6d3d1]">
+            <span>Com Jireh Kids em funcionamento</span>
+            <span class="text-amber-400 font-medium">Recepção aberta às 18h00</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- LOCALIZAÇÃO & COMO CHEGAR NA BR-476 -->
+      <div id="localizacao" class="rounded-3xl p-8 sm:p-12 bg-[#161619] border border-[#2b2824] grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <!-- Detalhes do Endereço -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="inline-flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-amber-400">
+            <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+            <span>Como Chegar</span>
+          </div>
+
+          <h3 class="font-serif text-2xl sm:text-3xl font-normal text-[#f4efe6]">
+            Rua Rodolfo Wolff, 384
+          </h3>
+
+          <div class="space-y-3 text-sm text-[#d6d3d1]">
+            <p class="flex items-start gap-3">
+              <i data-lucide="navigation" class="w-4 h-4 text-amber-400 flex-shrink-0 mt-1"></i>
+              <span><strong>Margem da BR-476</strong> &mdash; Ponto de referência: <strong>Ao lado do Restaurante Veneza</strong></span>
+            </p>
+            <p class="flex items-start gap-3">
+              <i data-lucide="map-pin" class="w-4 h-4 text-amber-400 flex-shrink-0 mt-1"></i>
+              <span>Vila Amaral / Jardim Dona Hermínia &mdash; São Mateus do Sul, PR</span>
+            </p>
+            <p class="flex items-start gap-3">
+              <i data-lucide="car" class="w-4 h-4 text-amber-400 flex-shrink-0 mt-1"></i>
+              <span>Vagas amplas para estacionar seu carro ou moto sem aperto</span>
+            </p>
+          </div>
+
+          <!-- Botões de Rotas Rápidas -->
+          <div class="flex flex-wrap items-center gap-3 pt-2">
+            <a href="https://www.google.com/maps/search/?api=1&query=Rua+Rodolfo+Wolff+384+Sao+Mateus+do+Sul+PR" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#f4efe6] hover:bg-[#ede6db] text-[#111113] font-semibold text-xs sm:text-sm transition-all shadow-sm">
+              <i data-lucide="map" class="w-4 h-4 text-amber-700"></i>
+              <span>Abrir no Google Maps</span>
+            </a>
+
+            <a href="https://waze.com/ul?q=Rua+Rodolfo+Wolff+384+Sao+Mateus+do+Sul" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#1c1a18] hover:bg-[#23201d] text-[#f4efe6] font-medium text-xs sm:text-sm border border-[#2b2824] transition-all">
+              <i data-lucide="navigation-2" class="w-4 h-4 text-amber-400"></i>
+              <span>Abrir no Waze</span>
+            </a>
+
+            <button onclick="copiarEndereco()" class="flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-[#1c1a18] hover:bg-[#23201d] text-[#a8a29e] hover:text-[#f4efe6] text-xs transition-all border border-[#2b2824]" title="Copiar endereço completo">
+              <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+              <span id="btn-copy-address-text">Copiar Endereço</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mapa Google Maps Incorporado -->
+        <div class="lg:col-span-7 h-80 sm:h-96 rounded-2xl overflow-hidden border border-[#2b2824] relative bg-[#111113]">
+          <iframe 
+            title="Localização da Comunidade Cristã Jeová Jireh em São Mateus do Sul"
+            class="w-full h-full filter contrast-[1.02] grayscale-[30%]"
+            src="https://maps.google.com/maps?q=Rua%20Rodolfo%20Wolff,%20384,%20S%C3%A3o%20Mateus%20do%20Sul%20-%20PR&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 7. MÓDULO: CÉLULAS & ENCONTROS NOS BAIRROS (HUMANO, CAFÉ PASSADO)         -->
+  <!-- ========================================================================= -->
+  <section id="celulas" class="py-24 relative bg-[#161619] border-t border-b border-[#2b2824]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Cabeçalho -->
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <div class="inline-flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-amber-400 mb-3">
+          <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+          <span>A Igreja nos Lares</span>
+        </div>
+        <h2 class="font-serif text-3xl sm:text-5xl font-normal text-[#f4efe6] tracking-tight mb-4">
+          Células nos Bairros de São Mateus do Sul
+        </h2>
+        <p class="text-[#a8a29e] text-sm sm:text-base leading-relaxed">
+          A igreja não acontece só no templo. Durante a semana nos reunimos de casa em casa, com café passado e conversa sincera. Encontre a célula mais perto da sua rua!
+        </p>
+      </div>
+
+      <!-- Barra de Filtro / Busca de Células -->
+      <div class="max-w-xl mx-auto mb-10 flex flex-col sm:flex-row items-center gap-3">
+        <div class="relative w-full">
+          <i data-lucide="search" class="w-4 h-4 text-[#78716c] absolute left-4 top-1/2 -translate-y-1/2"></i>
+          <input 
+            type="text" 
+            id="celula-search" 
+            oninput="filtrarCelulas()" 
+            placeholder="Buscar por bairro (ex: Vila Amaral, Centro, Prohmann)..." 
+            class="w-full pl-11 pr-4 py-3 rounded-xl bg-[#111113] border border-[#2b2824] text-[#f4efe6] placeholder-[#78716c] focus:outline-none focus:border-amber-500 text-sm">
+        </div>
+        <button onclick="openAdminModal(1)" class="whitespace-nowrap px-4 py-3 rounded-xl bg-[#1c1a18] hover:bg-[#23201d] text-xs font-semibold text-[#d6d3d1] border border-[#2b2824] flex items-center gap-2 transition-all">
+          <i data-lucide="plus" class="w-4 h-4 text-amber-400"></i>
+          <span>Cadastrar Célula</span>
+        </button>
+      </div>
+
+      <!-- Grid de Células (Renderizado Dinamicamente via JS) -->
+      <div id="celulas-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Preenchido via renderCelulas() -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 8. MÓDULO: SERMÕES & LIVES DO YOUTUBE (PLAYER EDITORIAL SEM BORDAS NEON)   -->
+  <!-- ========================================================================= -->
+  <section id="sermoes" class="py-24 relative bg-[#111113]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Cabeçalho -->
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-amber-400 mb-3">
+          <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+          <span>Palavra & Edificação</span>
+        </div>
+        <h2 class="font-serif text-3xl sm:text-4xl font-normal text-[#f4efe6] tracking-tight mb-4">
+          Sermões e Mensagens da Palavra
+        </h2>
+        <p class="text-[#a8a29e] text-sm sm:text-base leading-relaxed">
+          Assista às ministrações bíblicas e estudos gravados em nossa comunidade. Ouça onde você estiver.
+        </p>
+      </div>
+
+      <!-- Player de Destaque 16:9 Limpo e Widescreen -->
+      <div class="max-w-4xl mx-auto mb-16">
+        <div class="rounded-3xl overflow-hidden bg-[#161619] border border-[#2b2824] p-3 sm:p-5">
+          <div class="relative w-full aspect-video rounded-2xl overflow-hidden bg-black shadow-lg">
+            <iframe 
+              id="main-video-player"
+              class="w-full h-full"
+              src="https://www.youtube.com/embed/8mJbN6W_o2E" 
+              title="Sermão Comunidade Jeová Jireh" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="pt-5 pb-2 px-2 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div>
+              <span class="inline-block text-[11px] font-semibold uppercase tracking-wider text-amber-400 mb-1">
+                Reproduzindo Agora
+              </span>
+              <h3 id="main-video-title" class="font-serif text-xl sm:text-2xl font-normal text-[#f4efe6]">
+                O Deus Que Provê: O Princípio de Jeová Jireh
+              </h3>
+              <p id="main-video-author" class="text-xs text-[#a8a29e] mt-1">
+                Ministração Pastoral &bull; Comunidade Cristã Jeová Jireh &bull; São Mateus do Sul
+              </p>
+            </div>
+            <div class="flex-shrink-0">
+              <button onclick="openAdminModal(0)" class="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-[#1c1a18] hover:bg-[#23201d] text-xs font-medium text-[#d6d3d1] border border-[#2b2824] transition-all">
+                <i data-lucide="plus" class="w-3.5 h-3.5 text-amber-400"></i>
+                <span>Adicionar Nova Live</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Grid de Mensagens Recentes -->
+      <div>
+        <div class="flex items-center justify-between mb-8 max-w-6xl mx-auto">
+          <h3 class="font-serif text-xl font-normal text-[#f4efe6]">
+            Mais Mensagens & Estudos
+          </h3>
+          <span class="text-xs text-[#78716c]">Clique para trocar o vídeo no player acima</span>
+        </div>
+        <div id="sermoes-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <!-- Renderizado via renderSermoes() -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 9. MÓDULO: CENTRAL DE ORAÇÃO (DISCRETO E CONFIDENCIAL)                     -->
+  <!-- ========================================================================= -->
+  <section id="oracao" class="py-24 relative bg-[#111113]">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="rounded-3xl p-8 sm:p-12 bg-[#161619] border border-[#2b2824] text-left">
+        <div class="mb-8">
+          <div class="inline-flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-amber-400 mb-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+            <span>Intercessão Pastoral</span>
+          </div>
+          <h2 class="font-serif text-3xl font-normal text-[#f4efe6] mb-3">
+            Podemos orar por você?
+          </h2>
+          <p class="text-xs text-[#a8a29e] leading-relaxed">
+            Seja um problema de saúde, uma aflição familiar ou um momento de gratidão: nossa equipe de oração se reunirá em sigilo para interceder por sua vida.
+          </p>
+        </div>
+
+        <form id="form-oracao" onsubmit="handleOracaoSubmit(event)" class="space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="oracao-nome" class="block text-xs font-medium text-[#d6d3d1] uppercase tracking-wider mb-2">Seu Nome *</label>
+              <input type="text" id="oracao-nome" required placeholder="Como podemos te chamar?" class="w-full px-4 py-3 rounded-xl bg-[#111113] border border-[#2b2824] text-[#f4efe6] placeholder-[#78716c] focus:outline-none focus:border-amber-500 text-sm">
+            </div>
+            <div>
+              <label for="oracao-tipo" class="block text-xs font-medium text-[#d6d3d1] uppercase tracking-wider mb-2">Tipo do Pedido</label>
+              <select id="oracao-tipo" class="w-full px-4 py-3 rounded-xl bg-[#111113] border border-[#2b2824] text-[#f4efe6] focus:outline-none focus:border-amber-500 text-sm">
+                <option value="Família e Casamento">Família e Casamento</option>
+                <option value="Saúde e Cura">Saúde e Cura Física</option>
+                <option value="Trabalho e Finanças">Trabalho e Finanças</option>
+                <option value="Paz e Vida Espiritual">Paz e Vida Espiritual</option>
+                <option value="Agradecimento">Agradecimento por uma Bênção</option>
+                <option value="Outro Motivo">Outro Motivo</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label for="oracao-motivo" class="block text-xs font-medium text-[#d6d3d1] uppercase tracking-wider mb-2">Descreva seu motivo de oração *</label>
+            <textarea id="oracao-motivo" required rows="4" placeholder="Fale com sinceridade o que está no seu coração. Nós vamos nos unir em fé com você..." class="w-full px-4 py-3 rounded-xl bg-[#111113] border border-[#2b2824] text-[#f4efe6] placeholder-[#78716c] focus:outline-none focus:border-amber-500 text-sm resize-none"></textarea>
+          </div>
+
+          <div class="flex items-center gap-2.5 pt-1">
+            <input type="checkbox" id="oracao-sigilo" checked class="w-4 h-4 rounded text-amber-600 bg-[#111113] border-[#2b2824] focus:ring-0">
+            <label for="oracao-sigilo" class="text-xs text-[#a8a29e]">Manter sigilo restrito apenas aos pastores da comunidade</label>
+          </div>
+
+          <button type="submit" class="w-full flex items-center justify-center gap-2.5 py-3.5 rounded-xl font-semibold bg-[#f4efe6] hover:bg-[#ede6db] text-[#111113] transition-all text-sm mt-3">
+            <i data-lucide="send" class="w-4 h-4 text-amber-700"></i>
+            <span>Enviar Pedido de Oração no WhatsApp</span>
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 10. MÓDULO: DÍZIMOS & OFERTAS NO PIX (DISCRETO, ELEGANTE E SOLENE)         -->
+  <!-- ========================================================================= -->
+  <section id="dizimos" class="py-24 relative bg-[#161619] border-t border-b border-[#2b2824]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="max-w-2xl mx-auto rounded-3xl p-8 sm:p-12 bg-[#1c1a18] border border-[#2b2824] relative text-left">
+        
+        <div class="mb-8">
+          <div class="inline-flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-amber-400 mb-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+            <span>Generosidade Cristã</span>
+          </div>
+          
+          <h2 class="font-serif text-3xl font-normal text-[#f4efe6] mb-3">
+            Dízimos e Ofertas
+          </h2>
+
+          <p class="font-serif italic text-sm text-amber-200/90 mb-4">
+            &ldquo;Cada um dê conforme determinou em seu coração, não com pesar ou por obrigação, pois Deus ama quem dá com alegria.&rdquo; &mdash; 2 Coríntios 9:7
+          </p>
+
+          <p class="text-xs text-[#a8a29e] leading-relaxed">
+            Sua fidelidade sustenta o ministério com as crianças no Jireh Kids, o auxílio a famílias em vulnerabilidade em São Mateus do Sul e a manutenção da nossa casa.
+          </p>
+        </div>
+
+        <!-- Card de Pagamento PIX Elegante -->
+        <div class="p-6 rounded-2xl bg-[#111113] border border-[#2b2824] space-y-5">
+          
+          <div class="flex items-center justify-between pb-4 border-b border-[#2b2824]">
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-xl bg-[#1c1a18] border border-[#2b2824] text-amber-400 flex items-center justify-center">
+                <i data-lucide="qr-code" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <span class="block text-[11px] text-[#78716c]">Favorecido Oficial</span>
+                <span class="block text-sm font-semibold text-[#f4efe6]">Comunidade Cristã Jeová Jireh</span>
+              </div>
+            </div>
+            <span class="text-[10px] font-bold uppercase tracking-wider text-amber-400 bg-amber-950/40 border border-amber-900/60 px-2 py-0.5 rounded">
+              PIX Oficial
+            </span>
+          </div>
+
+          <!-- Chave PIX e Botão Copiar -->
+          <div>
+            <label class="block text-[11px] font-semibold text-[#a8a29e] uppercase tracking-wider mb-2">Chave PIX Cadastrada:</label>
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5">
+              <div class="flex-1 px-4 py-3 rounded-xl bg-[#161619] border border-[#2b2824] text-[#f4efe6] font-mono text-xs sm:text-sm select-all">
+                <span id="pix-key-val">contato@comunidadejeovajireh.com.br</span>
+              </div>
+              <button 
+                id="btn-copiar-pix" 
+                onclick="copiarChavePix()" 
+                class="px-5 py-3 rounded-xl bg-[#f4efe6] hover:bg-[#ede6db] text-[#111113] font-semibold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all flex-shrink-0">
+                <i data-lucide="copy" class="w-4 h-4 text-amber-700"></i>
+                <span id="btn-copiar-pix-text">Copiar Chave PIX</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Detalhes de Segurança -->
+          <div class="grid grid-cols-2 gap-4 text-xs text-[#a8a29e] pt-3 border-t border-[#2b2824]">
+            <div>
+              <span class="block text-[11px] text-[#78716c]">Instituição:</span>
+              <span class="font-medium text-[#d6d3d1]">Sicredi / NuBank</span>
+            </div>
+            <div>
+              <span class="block text-[11px] text-[#78716c]">Cidade / Estado:</span>
+              <span class="font-medium text-[#d6d3d1]">São Mateus do Sul - PR</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 11. FOOTER SÓBRIO & ACOLHEDOR                                             -->
+  <!-- ========================================================================= -->
+  <footer class="bg-[#0e0e10] border-t border-[#2b2824] pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+        
+        <!-- Logo e Sobre -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 flex items-center justify-center text-[#f4efe6]">
+              <svg class="w-7 h-7 fill-current" viewBox="0 0 540 540">
+                <path fill-rule="evenodd" d="M 452 411 L 430 361 L 429 348 L 471 310 L 482 302 L 488 302 L 532 341 L 540 342 L 540 529 L 506 529 L 501 525 L 452 411 Z M 90 529 L 28 530 L 22 528 L 21 521 L 39 497 L 182 254 L 197 236 L 211 241 L 322 319 L 361 342 L 382 360 L 401 405 L 409 415 L 411 429 L 419 440 L 421 452 L 452 521 L 446 530 L 90 529 Z M 374 47 L 388 26 L 391 15 L 402 12 L 407 15 L 411 28 L 455 99 L 520 104 L 528 109 L 533 121 L 540 123 L 540 282 L 530 280 L 498 250 L 482 243 L 405 308 L 395 310 L 271 227 L 272 214 L 278 210 L 292 181 L 298 176 L 374 47 Z" />
+              </svg>
+            </div>
+            <div>
+              <span class="block text-base font-bold text-[#f4efe6]">Jeová Jireh</span>
+              <span class="block text-[11px] text-[#a8a29e]">São Mateus do Sul • PR</span>
+            </div>
+          </div>
+          <p class="text-xs text-[#a8a29e] leading-relaxed max-w-sm">
+            Uma família abençoada vivendo o amor de Jesus em São Mateus do Sul e região. &ldquo;O Senhor Proverá&rdquo; (Gênesis 22:14).
+          </p>
+          <div class="flex items-center gap-2.5 pt-1">
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-[#1c1a18] hover:bg-[#23201d] text-[#a8a29e] hover:text-[#f4efe6] border border-[#2b2824] flex items-center justify-center transition-all" title="Instagram">
+              <i data-lucide="instagram" class="w-3.5 h-3.5"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-[#1c1a18] hover:bg-[#23201d] text-[#a8a29e] hover:text-[#f4efe6] border border-[#2b2824] flex items-center justify-center transition-all" title="YouTube">
+              <i data-lucide="youtube" class="w-3.5 h-3.5"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-[#1c1a18] hover:bg-[#23201d] text-[#a8a29e] hover:text-[#f4efe6] border border-[#2b2824] flex items-center justify-center transition-all" title="Facebook">
+              <i data-lucide="facebook" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navegação Rápida -->
+        <div class="space-y-3">
+          <h4 class="text-xs font-semibold text-[#f4efe6] uppercase tracking-wider">Navegação</h4>
+          <ul class="space-y-2 text-xs text-[#a8a29e]">
+            <li><a href="#inicio" class="hover:text-[#f4efe6] transition-colors">Início</a></li>
+            <li><a href="#sobre" class="hover:text-[#f4efe6] transition-colors">Quem Somos</a></li>
+            <li><a href="#visita" class="hover:text-[#f4efe6] transition-colors">Planeje Sua Visita</a></li>
+            <li><a href="#kids" class="hover:text-[#f4efe6] transition-colors">Jireh Kids</a></li>
+            <li><a href="#cultos" class="hover:text-[#f4efe6] transition-colors">Cultos Semanais</a></li>
+            <li><a href="#celulas" class="hover:text-[#f4efe6] transition-colors">Células nos Bairros</a></li>
+          </ul>
+        </div>
+
+        <!-- Cultos Oficiais -->
+        <div class="space-y-3">
+          <h4 class="text-xs font-semibold text-[#f4efe6] uppercase tracking-wider">Cultos Semanais</h4>
+          <div class="space-y-2.5 text-xs text-[#a8a29e]">
+            <div>
+              <span class="block font-medium text-amber-300">Quintas • 19h30</span>
+              <span>Oração & Estudo Bíblico</span>
+            </div>
+            <div>
+              <span class="block font-medium text-amber-300">Domingos • 18h30</span>
+              <span>Culto da Família & Celebração</span>
+            </div>
+            <div>
+              <span class="block font-medium text-[#d6d3d1]">Jireh Kids:</span>
+              <span>Aos domingos durante o culto</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Localização & Contato -->
+        <div class="space-y-3">
+          <h4 class="text-xs font-semibold text-[#f4efe6] uppercase tracking-wider">Onde Estamos</h4>
+          <div class="space-y-2 text-xs text-[#a8a29e]">
+            <p>Rua Rodolfo Wolff, 384 &mdash; BR-476</p>
+            <p class="text-amber-300/90 font-medium">Ao lado do Restaurante Veneza</p>
+            <p>São Mateus do Sul &mdash; PR</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright -->
+      <div class="pt-8 border-t border-[#2b2824] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#78716c]">
+        <p>&copy; 2026 Comunidade Cristã Jeová Jireh &bull; São Mateus do Sul - PR.</p>
+        <p class="flex items-center gap-1">
+          <span>Uma família abençoada vivendo o amor de Jesus</span>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- 12. MODAL DA ÁREA DA LIDERANÇA (ADMIN COM SENHA 'jireh123')              -->
+  <!-- ========================================================================= -->
+  <div id="admin-modal" class="fixed inset-0 z-[90] hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
+    
+    <div class="w-full max-w-xl bg-[#161619] border border-[#38342f] rounded-3xl shadow-2xl overflow-hidden my-8">
+      
+      <!-- Topo do Modal -->
+      <div class="px-6 py-5 bg-[#1c1a18] border-b border-[#2b2824] flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-lg bg-[#2b2824] text-amber-400 flex items-center justify-center">
+            <i data-lucide="lock" class="w-4 h-4"></i>
+          </div>
+          <div>
+            <h3 class="text-sm font-bold text-[#f4efe6]">Painel da Liderança</h3>
+            <span class="text-[11px] text-[#a8a29e]">Gestão de Sermões e Células</span>
+          </div>
+        </div>
+        <button onclick="closeAdminModal()" class="p-1.5 rounded-lg text-[#a8a29e] hover:text-white hover:bg-[#2b2824] transition-colors">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- TELA 1: LOGIN (Se não autenticado) -->
+      <div id="admin-auth-screen" class="p-8 text-center space-y-6">
+        <div class="w-14 h-14 rounded-2xl bg-[#1c1a18] border border-[#2b2824] text-amber-400 flex items-center justify-center mx-auto">
+          <i data-lucide="key-round" class="w-6 h-6"></i>
+        </div>
+        <div>
+          <h4 class="font-serif text-xl font-normal text-[#f4efe6] mb-1">Acesso à Liderança</h4>
+          <p class="text-xs text-[#a8a29e] max-w-sm mx-auto">
+            Digite a senha para gerenciar lives do YouTube e novos pequenos grupos nos bairros.
+          </p>
+        </div>
+
+        <form onsubmit="handleAdminLogin(event)" class="max-w-sm mx-auto space-y-4">
+          <div>
+            <input 
+              type="password" 
+              id="admin-password" 
+              placeholder="Digite a senha..." 
+              required
+              class="w-full px-4 py-3 rounded-xl bg-[#111113] border border-[#2b2824] text-[#f4efe6] placeholder-[#78716c] focus:outline-none focus:border-amber-500 text-center tracking-widest text-sm">
+            <p class="text-[11px] text-amber-400/90 mt-2">Dica de demonstração: <strong>jireh123</strong></p>
+          </div>
+          <button type="submit" class="w-full py-3 rounded-xl font-semibold bg-[#f4efe6] hover:bg-[#ede6db] text-[#111113] text-sm transition-all">
+            Entrar no Painel
+          </button>
+        </form>
+      </div>
+
+      <!-- TELA 2: CONTEÚDO DO ADMIN (Após autenticado) -->
+      <div id="admin-dashboard-screen" class="hidden p-6 space-y-6">
+        
+        <!-- Tabs do Admin -->
+        <div class="flex items-center gap-2 border-b border-[#2b2824] pb-3">
+          <button id="tab-btn-sermoes" onclick="switchAdminTab('sermoes')" class="px-3.5 py-2 rounded-xl text-xs font-semibold bg-[#f4efe6] text-[#111113] transition-all">
+            + Novo Sermão / YouTube
+          </button>
+          <button id="tab-btn-celulas" onclick="switchAdminTab('celulas')" class="px-3.5 py-2 rounded-xl text-xs font-semibold bg-[#1c1a18] text-[#a8a29e] hover:text-[#f4efe6] transition-all">
+            + Nova Célula
+          </button>
+          <button id="tab-btn-gerenciar" onclick="switchAdminTab('gerenciar')" class="px-3.5 py-2 rounded-xl text-xs font-semibold bg-[#1c1a18] text-[#a8a29e] hover:text-[#f4efe6] transition-all">
+            Configurações
+          </button>
+          <button onclick="adminLogout()" class="ml-auto text-xs text-red-400 hover:text-red-300 flex items-center gap-1">
+            <i data-lucide="log-out" class="w-3.5 h-3.5"></i>
+            <span>Sair</span>
+          </button>
+        </div>
+
+        <!-- ABA 1: NOVO SERMÃO -->
+        <div id="tab-content-sermoes" class="space-y-4">
+          <form onsubmit="handleAdicionarSermao(event)" class="space-y-4">
+            <div>
+              <label class="block text-xs font-medium text-[#d6d3d1] uppercase mb-1">Título da Mensagem *</label>
+              <input type="text" id="admin-sermao-title" required placeholder="Ex: O Poder da Fé em Família" class="w-full px-4 py-2.5 rounded-xl bg-[#111113] border border-[#2b2824] text-[#f4efe6] text-sm focus:outline-none focus:border-amber-500">
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-medium text-[#d6d3d1] uppercase mb-1">Pregador / Pastor *</label>
+                <input type="text" id="admin-sermao-preacher" required placeholder="Ex: Pr. Roberto Silva" class="w-full px-4 py-2.5 rounded-xl bg-[#111113] border border-[#2b2824] text-[#f4efe6] text-sm focus:outline-none focus:border-amber-500">
+              </div>
+              <div>
+                <label class="block text-xs font-medium text-[#d6d3d1] uppercase mb-1">Data / Culto *</label>
+                <input type="text" id="admin-sermao-date" required placeholder="Ex: Domingo de Celebração" class="w-full px-4 py-2.5 rounded-xl bg-[#111113] border border-[#2b2824] text-[#f4efe6] text-sm focus:outline-none focus:border-amber-500">
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-medium text-[#d6d3d1] uppercase mb-1">Link ou ID do YouTube *</label>
+              <input type="text" id="admin-sermao-url" required placeholder="Ex: https://youtu.be/8mJbN6W_o2E ou o código do vídeo" class="w-full px-4 py-2.5 rounded-xl bg-[#111113] border border-[#2b2824] text-[#f4efe6] text-sm focus:outline-none focus:border-amber-500 font-mono">
+              <span class="text-[11px] text-[#78716c]">Extrai o ID automaticamente de links normais, lives ou links curtos do YouTube.</span>
+            </div>
+
+            <div>
+              <label class="block text-xs font-medium text-[#d6d3d1] uppercase mb-1">Breve Resumo ou Versículo</label>
+              <input type="text" id="admin-sermao-desc" placeholder="Ex: Estudo bíblico prático sobre oração e comunhão" class="w-full px-4 py-2.5 rounded-xl bg-[#111113] border border-[#2b2824] text-[#f4efe6] text-sm focus:outline-none focus:border-amber-500">
+            </div>
+
+            <button type="submit" class="w-full py-3 rounded-xl font-semibold bg-[#f4efe6] hover:bg-[#ede6db] text-[#111113] text-sm transition-all flex items-center justify-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-amber-700"></i>
+              <span>Publicar Sermão Instantaneamente</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- ABA 2: NOVA CÉLULA -->
+        <div id="tab-content-celulas" class="hidden space-y-4">
+          <form onsubmit="handleAdicionarCelula(event)" class="space-y-4">
+            <div>
+              <label class="block text-xs font-medium text-[#d6d3d1] uppercase mb-1">Nome da Célula *</label>
+              <input type="text" id="admin-celula-name" required placeholder="Ex: Célula Graça & Paz" class="w-full px-4 py-2.5 rounded-xl bg-[#111113] border border-[#2b2824] text-[#f4efe6] text-sm focus:outline-none focus:border-amber-500">
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-medium text-[#d6d3d1] uppercase mb-1">Bairro em São Mateus do Sul *</label>
+                <input type="text" id="admin-celula-neighborhood" required placeholder="Ex: Vila Amaral, Centro, Prohmann..." class="w-full px-4 py-2.5 rounded-xl bg-[#111113] border border-[#2b2824] text-[#f4efe6] text-sm focus:outline-none focus:border-amber-500">
+              </div>
+              <div>
+                <label class="block text-xs font-medium text-[#d6d3d1] uppercase mb-1">Dia da Semana *</label>
+                <input type="text" id="admin-celula-day" required placeholder="Ex: Terça-feira ou Quarta-feira" class="w-full px-4 py-2.5 rounded-xl bg-[#111113] border border-[#2b2824] text-[#f4efe6] text-sm focus:outline-none focus:border-amber-500">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-medium text-[#d6d3d1] uppercase mb-1">Horário *</label>
+                <input type="text" id="admin-celula-time" required placeholder="Ex: 19h30 ou 20h00" class="w-full px-4 py-2.5 rounded-xl bg-[#111113] border border-[#2b2824] text-[#f4efe6] text-sm focus:outline-none focus:border-amber-500">
+              </div>
+              <div>
+                <label class="block text-xs font-medium text-[#d6d3d1] uppercase mb-1">Líderes Responsáveis *</label>
+                <input type="text" id="admin-celula-leaders" required placeholder="Ex: Marcos & Juliana" class="w-full px-4 py-2.5 rounded-xl bg-[#111113] border border-[#2b2824] text-[#f4efe6] text-sm focus:outline-none focus:border-amber-500">
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-medium text-[#d6d3d1] uppercase mb-1">WhatsApp do Líder (com DDD) *</label>
+              <input type="text" id="admin-celula-whatsapp" required placeholder="Ex: 42999999999" class="w-full px-4 py-2.5 rounded-xl bg-[#111113] border border-[#2b2824] text-[#f4efe6] text-sm focus:outline-none focus:border-amber-500 font-mono">
+            </div>
+
+            <button type="submit" class="w-full py-3 rounded-xl font-semibold bg-[#f4efe6] hover:bg-[#ede6db] text-[#111113] text-sm transition-all flex items-center justify-center gap-2">
+              <i data-lucide="plus" class="w-4 h-4 text-amber-700"></i>
+              <span>Cadastrar Célula no Bairro</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- ABA 3: CONFIGURAÇÕES & RESET -->
+        <div id="tab-content-gerenciar" class="hidden space-y-4">
+          <div class="p-4 rounded-xl bg-[#111113] border border-[#2b2824] text-xs text-[#a8a29e] space-y-2">
+            <h5 class="font-semibold text-[#f4efe6]">Armazenamento Local (localStorage)</h5>
+            <p>Os sermões e células adicionados ficam salvos diretamente neste navegador. Para restaurar os conteúdos originais padrão, use o botão abaixo:</p>
+          </div>
+
+          <button onclick="resetarDadosPadrao()" class="w-full py-3 rounded-xl font-medium bg-red-950/40 hover:bg-red-900/50 border border-red-800 text-red-200 text-xs transition-all flex items-center justify-center gap-2">
+            <i data-lucide="refresh-cw" class="w-3.5 h-3.5"></i>
+            <span>Restaurar Sermões e Células Originais</span>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Botão Flutuante do WhatsApp (Acolhedor e Discreto) -->
+  <a href="https://wa.me/5542999999999?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20Comunidade%20Crist%C3%A3%20Jeov%C3%A1%20Jireh." target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-40 w-12 h-12 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center shadow-lg hover:scale-105 transition-all duration-300" title="Fale Conosco no WhatsApp">
+    <i data-lucide="message-circle" class="w-6 h-6"></i>
+  </a>
+
+  <!-- ========================================================================= -->
+  <!-- JAVASCRIPT REATIVO & GESTÃO DE ESTADO                                     -->
+  <!-- ========================================================================= -->
+  <script>
+    // -------------------------------------------------------------------------
+    // DADOS INICIAIS (FALLBACKS DE SÃO MATEUS DO SUL)
+    // -------------------------------------------------------------------------
+    const DEFAULT_CELULAS = [
+      {
+        id: 1,
+        name: "Célula Videira Verdadeira",
+        neighborhood: "Vila Amaral",
+        day: "Terça-feira",
+        time: "20h00",
+        leaders: "Marcos & Juliana",
+        whatsapp: "5542999123456"
+      },
+      {
+        id: 2,
+        name: "Célula Manancial de Vida",
+        neighborhood: "Centro",
+        day: "Quarta-feira",
+        time: "19h30",
+        leaders: "Pr. Roberto & Ana",
+        whatsapp: "5542999234567"
+      },
+      {
+        id: 3,
+        name: "Célula Águas Vivas",
+        neighborhood: "Jardim Dona Hermínia",
+        day: "Sexta-feira",
+        time: "20h00",
+        leaders: "Tiago & Patrícia",
+        whatsapp: "5542999345678"
+      },
+      {
+        id: 4,
+        name: "Célula Luz das Nações",
+        neighborhood: "Vila Prohmann",
+        day: "Sábado",
+        time: "19h00",
+        leaders: "Gabriel & Letícia",
+        whatsapp: "5542999456789"
+      }
+    ];
+
+    const DEFAULT_SERMOES = [
+      {
+        id: "8mJbN6W_o2E",
+        title: "O Deus Que Provê: O Princípio de Jeová Jireh",
+        preacher: "Ministração Pastoral",
+        date: "Domingo de Celebração",
+        description: "Compreendendo como a providência divina se manifesta quando descansamos nossa confiança no amor de Deus."
+      },
+      {
+        id: "l4Fm1B5-364",
+        title: "Uma Família Edificada na Rocha",
+        preacher: "Pastores da Comunidade",
+        date: "Culto da Família",
+        description: "Princípios práticos das Escrituras para cultivar harmonia no lar e cuidar com carinho da nova geração."
+      },
+      {
+        id: "2vjPBrBU-TM",
+        title: "A Graça que Transforma e Acolhe o Coração",
+        preacher: "Estudo Especial das Quintas",
+        date: "Quinta-feira de Palavra",
+        description: "Descobrindo o descanso da alma e a paz que ultrapassa todo o entendimento através de Jesus."
+      }
+    ];
+
+    // -------------------------------------------------------------------------
+    // TOAST NOTIFICATIONS HELPER (DISCRETO & SÓBRIO)
+    // -------------------------------------------------------------------------
+    function showToast(title, message, type = 'success') {
+      const container = document.getElementById('toast-container');
+      const toast = document.createElement('div');
+      toast.className = `pointer-events-auto flex items-start gap-3 p-4 rounded-2xl bg-[#1c1a18] border ${
+        type === 'success' ? 'border-[#38342f] text-[#f4efe6]' : 'border-red-800 text-white'
+      } shadow-xl transition-all duration-300 transform translate-y-2 opacity-0 max-w-sm`;
+      
+      const icon = type === 'success' ? 'check-circle' : 'alert-circle';
+      const iconColor = type === 'success' ? 'text-amber-400' : 'text-red-400';
+
+      toast.innerHTML = `
+        <div class="mt-0.5 ${iconColor}">
+          <i data-lucide="${icon}" class="w-4 h-4"></i>
+        </div>
+        <div>
+          <h5 class="text-xs font-bold text-[#f4efe6]">${title}</h5>
+          <p class="text-[11px] text-[#a8a29e] mt-0.5 leading-relaxed">${message}</p>
+        </div>
+      `;
+
+      container.appendChild(toast);
+      if (window.lucide) lucide.createIcons();
+
+      requestAnimationFrame(() => {
+        toast.classList.remove('translate-y-2', 'opacity-0');
+      });
+
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'translate-x-4');
+        setTimeout(() => toast.remove(), 300);
+      }, 4000);
+    }
+
+    // -------------------------------------------------------------------------
+    // MENU MOBILE TOGGLE
+    // -------------------------------------------------------------------------
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+
+    // -------------------------------------------------------------------------
+    // GESTÃO DE CÉLULAS (LOCALSTORAGE + RENDER EDITORIAL)
+    // -------------------------------------------------------------------------
+    function getCelulas() {
+      const saved = localStorage.getItem('jeovajireh_celulas');
+      if (!saved) {
+        localStorage.setItem('jeovajireh_celulas', JSON.stringify(DEFAULT_CELULAS));
+        return DEFAULT_CELULAS;
+      }
+      try {
+        return JSON.parse(saved);
+      } catch (e) {
+        return DEFAULT_CELULAS;
+      }
+    }
+
+    function renderCelulas(celulasToRender = null) {
+      const list = celulasToRender || getCelulas();
+      const grid = document.getElementById('celulas-grid');
+      
+      if (!list || list.length === 0) {
+        grid.innerHTML = `
+          <div class="col-span-full py-12 text-center text-[#78716c]">
+            <i data-lucide="search-x" class="w-8 h-8 mx-auto mb-2 opacity-60"></i>
+            <p class="text-xs">Nenhuma célula encontrada para esta pesquisa.</p>
+          </div>
+        `;
+        if (window.lucide) lucide.createIcons();
+        return;
+      }
+
+      grid.innerHTML = list.map(c => `
+        <div class="p-6 rounded-3xl bg-[#1c1a18] border border-[#2b2824] flex flex-col justify-between group hover:border-[#38342f] transition-all">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-4">
+              <span class="text-[11px] font-semibold tracking-wider text-amber-300 uppercase">
+                ${c.neighborhood}
+              </span>
+              <span class="text-[11px] text-[#a8a29e] flex items-center gap-1">
+                <i data-lucide="calendar" class="w-3 h-3 text-amber-500"></i>
+                ${c.day}
+              </span>
+            </div>
+
+            <h4 class="font-serif text-lg font-normal text-[#f4efe6] mb-3 group-hover:text-amber-200 transition-colors">
+              ${c.name}
+            </h4>
+
+            <div class="space-y-1.5 text-xs text-[#a8a29e] mb-6">
+              <p class="flex items-center gap-1.5">
+                <i data-lucide="clock" class="w-3.5 h-3.5 text-amber-500"></i>
+                <span>${c.time}</span>
+              </p>
+              <p class="flex items-center gap-1.5">
+                <i data-lucide="user" class="w-3.5 h-3.5 text-amber-500"></i>
+                <span>Líderes: <strong class="text-[#d6d3d1]">${c.leaders}</strong></span>
+              </p>
+            </div>
+          </div>
+
+          <a 
+            href="https://wa.me/${c.whatsapp.replace(/\D/g, '')}?text=${encodeURIComponent('Olá líder da ' + c.name + '! Gostaria de mais informações para participar do encontro no bairro ' + c.neighborhood + '.')}" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="w-full py-2.5 rounded-xl font-medium bg-[#111113] hover:bg-[#23201d] text-[#d6d3d1] hover:text-[#f4efe6] text-xs flex items-center justify-center gap-2 border border-[#2b2824] transition-all">
+            <i data-lucide="message-square" class="w-3.5 h-3.5 text-amber-500"></i>
+            <span>Participar no WhatsApp</span>
+          </a>
+        </div>
+      `).join('');
+
+      if (window.lucide) lucide.createIcons();
+    }
+
+    function filtrarCelulas() {
+      const query = document.getElementById('celula-search').value.toLowerCase().trim();
+      const all = getCelulas();
+      const filtered = all.filter(c => 
+        c.neighborhood.toLowerCase().includes(query) ||
+        c.name.toLowerCase().includes(query) ||
+        c.leaders.toLowerCase().includes(query)
+      );
+      renderCelulas(filtered);
+    }
+
+    // -------------------------------------------------------------------------
+    // GESTÃO DE SERMÕES / YOUTUBE (LOCALSTORAGE + PLAYER INTERATIVO)
+    // -------------------------------------------------------------------------
+    function extractYouTubeId(urlOrId) {
+      if (!urlOrId) return '8mJbN6W_o2E';
+      const clean = urlOrId.trim();
+      
+      if (/^[a-zA-Z0-9_-]{11}$/.test(clean)) {
+        return clean;
+      }
+      
+      const reg = /(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|live\/|shorts\/))([\w-]{11})/;
+      const match = clean.match(reg);
+      if (match && match[1]) {
+        return match[1];
+      }
+      return clean;
+    }
+
+    function getSermoes() {
+      const saved = localStorage.getItem('jeovajireh_sermoes');
+      if (!saved) {
+        localStorage.setItem('jeovajireh_sermoes', JSON.stringify(DEFAULT_SERMOES));
+        return DEFAULT_SERMOES;
+      }
+      try {
+        return JSON.parse(saved);
+      } catch (e) {
+        return DEFAULT_SERMOES;
+      }
+    }
+
+    function selectVideo(videoId, title, preacher) {
+      const player = document.getElementById('main-video-player');
+      player.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+      document.getElementById('main-video-title').textContent = title;
+      document.getElementById('main-video-author').textContent = `${preacher} • Comunidade Cristã Jeová Jireh`;
+      
+      const sermoesSection = document.getElementById('sermoes');
+      sermoesSection.scrollIntoView({ behavior: 'smooth' });
+
+      showToast("Reproduzindo Sermão", title);
+    }
+
+    function renderSermoes() {
+      const list = getSermoes();
+      const grid = document.getElementById('sermoes-grid');
+      
+      grid.innerHTML = list.map(s => `
+        <div class="rounded-3xl overflow-hidden bg-[#161619] border border-[#2b2824] flex flex-col justify-between group hover:border-[#38342f] transition-all">
+          <div class="relative aspect-video overflow-hidden bg-black cursor-pointer" onclick="selectVideo('${s.id}', '${s.title.replace(/'/g, "\\'")}', '${s.preacher.replace(/'/g, "\\'")}')">
+            <img 
+              src="https://img.youtube.com/vi/${s.id}/hqdefault.jpg" 
+              alt="${s.title}" 
+              onerror="this.src='assets/img_17.jpg'"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 flex items-center justify-center transition-colors">
+              <div class="w-11 h-11 rounded-full bg-[#f4efe6] text-[#111113] flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                <i data-lucide="play" class="w-4 h-4 fill-[#111113] ml-0.5"></i>
+              </div>
+            </div>
+            <span class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded text-[10px] font-semibold bg-black/80 text-white">
+              YouTube
+            </span>
+          </div>
+
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between text-xs text-amber-300 font-medium mb-1.5">
+                <span>${s.date}</span>
+                <span>${s.preacher}</span>
+              </div>
+              <h4 class="font-serif text-base font-normal text-[#f4efe6] mb-2 group-hover:text-amber-200 transition-colors line-clamp-2">
+                ${s.title}
+              </h4>
+              <p class="text-xs text-[#a8a29e] line-clamp-2 leading-relaxed mb-4">
+                ${s.description || 'Assista a esta mensagem edificante da Palavra de Deus.'}
+              </p>
+            </div>
+
+            <button 
+              onclick="selectVideo('${s.id}', '${s.title.replace(/'/g, "\\'")}', '${s.preacher.replace(/'/g, "\\'")}')" 
+              class="w-full py-2.5 rounded-xl font-medium bg-[#1c1a18] hover:bg-[#23201d] text-[#d6d3d1] text-xs flex items-center justify-center gap-2 border border-[#2b2824] transition-all">
+              <i data-lucide="play-circle" class="w-3.5 h-3.5 text-amber-500"></i>
+              <span>Assistir Agora</span>
+            </button>
+          </div>
+        </div>
+      `).join('');
+
+      if (window.lucide) lucide.createIcons();
+    }
+
+    // -------------------------------------------------------------------------
+    // BOTÃO COPIAR PIX COM FEEDBACK
+    // -------------------------------------------------------------------------
+    function copiarChavePix() {
+      const chave = document.getElementById('pix-key-val').innerText.trim();
+      navigator.clipboard.writeText(chave).then(() => {
+        const btn = document.getElementById('btn-copiar-pix');
+        const btnText = document.getElementById('btn-copiar-pix-text');
+        
+        btn.classList.add('bg-emerald-600', 'text-white');
+        btnText.textContent = "Chave Copiada! ✓";
+
+        showToast("Chave PIX Copiada!", "Cole no aplicativo do seu banco para transferir com segurança.");
+
+        setTimeout(() => {
+          btn.classList.remove('bg-emerald-600', 'text-white');
+          btnText.textContent = "Copiar Chave PIX";
+        }, 3000);
+      }).catch(err => {
+        showToast("Erro ao copiar", "Por favor, copie o texto manualmente.", "error");
+      });
+    }
+
+    function copiarEndereco() {
+      const endereco = "Rua Rodolfo Wolff, 384, São Mateus do Sul - PR (Ao lado do Restaurante Veneza)";
+      navigator.clipboard.writeText(endereco).then(() => {
+        const btnText = document.getElementById('btn-copy-address-text');
+        btnText.textContent = "Copiado! ✓";
+        showToast("Endereço Copiado!", "Cole no seu aplicativo de GPS favorito.");
+        setTimeout(() => {
+          btnText.textContent = "Copiar Endereço";
+        }, 3000);
+      });
+    }
+
+    // -------------------------------------------------------------------------
+    // FORMULÁRIO DE VISITA -> WHATSAPP
+    // -------------------------------------------------------------------------
+    function handleVisitaSubmit(e) {
+      e.preventDefault();
+      const nome = document.getElementById('visita-nome').value.trim();
+      const whatsapp = document.getElementById('visita-whatsapp').value.trim();
+      const data = document.getElementById('visita-data').value;
+      const filhos = document.getElementById('visita-filhos').value.trim() || 'Sem acompanhantes informados';
+
+      const texto = `*Planejamento de Visita - Comunidade Cristã Jeová Jireh*%0A%0A` +
+                    `*Nome:* ${encodeURIComponent(nome)}%0A` +
+                    `*WhatsApp:* ${encodeURIComponent(whatsapp)}%0A` +
+                    `*Culto Previsto:* ${encodeURIComponent(data)}%0A` +
+                    `*Acompanhantes:* ${encodeURIComponent(filhos)}%0A%0A` +
+                    `_Olá! Estou planejando visitar a igreja e gostaria de conhecer vocês._`;
+
+      window.open(`https://wa.me/5542999999999?text=${texto}`, '_blank');
+      showToast("Aviso Enviado!", "Que alegria! Aguardamos com muito carinho a sua visita.");
+      document.getElementById('form-visita').reset();
+    }
+
+    // -------------------------------------------------------------------------
+    // FORMULÁRIO DE ORAÇÃO -> WHATSAPP
+    // -------------------------------------------------------------------------
+    function handleOracaoSubmit(e) {
+      e.preventDefault();
+      const nome = document.getElementById('oracao-nome').value.trim();
+      const tipo = document.getElementById('oracao-tipo').value;
+      const motivo = document.getElementById('oracao-motivo').value.trim();
+      const sigilo = document.getElementById('oracao-sigilo').checked ? 'Sim (Confidencial Pastores)' : 'Não';
+
+      const texto = `*Pedido de Oração - Comunidade Cristã Jeová Jireh*%0A%0A` +
+                    `*Nome:* ${encodeURIComponent(nome)}%0A` +
+                    `*Tipo do Pedido:* ${encodeURIComponent(tipo)}%0A` +
+                    `*Sigilo Pastoral:* ${encodeURIComponent(sigilo)}%0A%0A` +
+                    `*Motivo de Oração:*%0A${encodeURIComponent(motivo)}%0A%0A` +
+                    `_Unam-se em oração por essa causa, por favor._`;
+
+      window.open(`https://wa.me/5542999999999?text=${texto}`, '_blank');
+      showToast("Pedido de Oração Enviado", "Nossa equipe pastoral intercederá pelo seu motivo.");
+      document.getElementById('form-oracao').reset();
+    }
+
+    // -------------------------------------------------------------------------
+    // MODAL DE ADMINISTRAÇÃO DA LIDERANÇA
+    // -------------------------------------------------------------------------
+    function openAdminModal(tabIndex = 0) {
+      const modal = document.getElementById('admin-modal');
+      modal.classList.remove('hidden');
+
+      const isAuth = sessionStorage.getItem('jireh_admin_auth') === 'true';
+      if (isAuth) {
+        document.getElementById('admin-auth-screen').classList.add('hidden');
+        document.getElementById('admin-dashboard-screen').classList.remove('hidden');
+        if (tabIndex === 1) switchAdminTab('celulas');
+        else switchAdminTab('sermoes');
+      } else {
+        document.getElementById('admin-auth-screen').classList.remove('hidden');
+        document.getElementById('admin-dashboard-screen').classList.add('hidden');
+      }
+
+      if (window.lucide) lucide.createIcons();
+    }
+
+    function closeAdminModal() {
+      document.getElementById('admin-modal').classList.add('hidden');
+    }
+
+    function handleAdminLogin(e) {
+      e.preventDefault();
+      const pass = document.getElementById('admin-password').value.trim();
+      if (pass === 'jireh123') {
+        sessionStorage.setItem('jireh_admin_auth', 'true');
+        document.getElementById('admin-auth-screen').classList.add('hidden');
+        document.getElementById('admin-dashboard-screen').classList.remove('hidden');
+        showToast("Autenticado com Sucesso", "Bem-vindo ao painel da liderança!");
+        switchAdminTab('sermoes');
+      } else {
+        showToast("Senha Incorreta", "Verifique a senha informada (dica: jireh123).", "error");
+      }
+    }
+
+    function adminLogout() {
+      sessionStorage.removeItem('jireh_admin_auth');
+      document.getElementById('admin-auth-screen').classList.remove('hidden');
+      document.getElementById('admin-dashboard-screen').classList.add('hidden');
+      document.getElementById('admin-password').value = '';
+      showToast("Sessão Encerrada", "Você saiu da área da liderança.");
+    }
+
+    function switchAdminTab(tabName) {
+      const tabs = ['sermoes', 'celulas', 'gerenciar'];
+      tabs.forEach(t => {
+        const btn = document.getElementById(`tab-btn-${t}`);
+        const content = document.getElementById(`tab-content-${t}`);
+        if (t === tabName) {
+          btn.className = "px-3.5 py-2 rounded-xl text-xs font-semibold bg-[#f4efe6] text-[#111113] transition-all";
+          content.classList.remove('hidden');
+        } else {
+          btn.className = "px-3.5 py-2 rounded-xl text-xs font-semibold bg-[#1c1a18] text-[#a8a29e] hover:text-[#f4efe6] transition-all";
+          content.classList.add('hidden');
+        }
+      });
+      if (window.lucide) lucide.createIcons();
+    }
+
+    function handleAdicionarSermao(e) {
+      e.preventDefault();
+      const title = document.getElementById('admin-sermao-title').value.trim();
+      const preacher = document.getElementById('admin-sermao-preacher').value.trim();
+      const date = document.getElementById('admin-sermao-date').value.trim();
+      const rawUrl = document.getElementById('admin-sermao-url').value.trim();
+      const desc = document.getElementById('admin-sermao-desc').value.trim();
+
+      const videoId = extractYouTubeId(rawUrl);
+
+      const sermoes = getSermoes();
+      const novoSermao = {
+        id: videoId,
+        title: title,
+        preacher: preacher,
+        date: date,
+        description: desc
+      };
+
+      sermoes.unshift(novoSermao);
+      localStorage.setItem('jeovajireh_sermoes', JSON.stringify(sermoes));
+
+      renderSermoes();
+      selectVideo(videoId, title, preacher);
+      showToast("Sermão Publicado!", "O novo vídeo já está visível para toda a igreja.");
+      closeAdminModal();
+    }
+
+    function handleAdicionarCelula(e) {
+      e.preventDefault();
+      const name = document.getElementById('admin-celula-name').value.trim();
+      const neighborhood = document.getElementById('admin-celula-neighborhood').value.trim();
+      const day = document.getElementById('admin-celula-day').value.trim();
+      const time = document.getElementById('admin-celula-time').value.trim();
+      const leaders = document.getElementById('admin-celula-leaders').value.trim();
+      const whatsapp = document.getElementById('admin-celula-whatsapp').value.trim();
+
+      const celulas = getCelulas();
+      const novaCelula = {
+        id: Date.now(),
+        name,
+        neighborhood,
+        day,
+        time,
+        leaders,
+        whatsapp
+      };
+
+      celulas.push(novaCelula);
+      localStorage.setItem('jeovajireh_celulas', JSON.stringify(celulas));
+
+      renderCelulas();
+      showToast("Célula Cadastrada!", `A ${name} no bairro ${neighborhood} já está no ar.`);
+      closeAdminModal();
+    }
+
+    function resetarDadosPadrao() {
+      if (confirm("Deseja realmente restaurar os sermões e células para a configuração original?")) {
+        localStorage.setItem('jeovajireh_celulas', JSON.stringify(DEFAULT_CELULAS));
+        localStorage.setItem('jeovajireh_sermoes', JSON.stringify(DEFAULT_SERMOES));
+        renderCelulas();
+        renderSermoes();
+        showToast("Dados Restaurados", "Os conteúdos padrões voltaram à exibição.");
+        closeAdminModal();
+      }
+    }
+
+    // -------------------------------------------------------------------------
+    // INICIALIZAÇÃO NO CARREGAMENTO DA PÁGINA
+    // -------------------------------------------------------------------------
+    document.addEventListener('DOMContentLoaded', () => {
+      renderCelulas();
+      renderSermoes();
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+
+      // Atalho de teclado para a Liderança (Ctrl + Shift + L)
+      document.addEventListener('keydown', (e) => {
+        if ((e.ctrlKey || e.metaKey) && e.shiftKey && (e.key === 'L' || e.key === 'l')) {
+          e.preventDefault();
+          openAdminModal();
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
